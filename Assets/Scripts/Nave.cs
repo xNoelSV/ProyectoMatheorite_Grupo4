@@ -26,8 +26,8 @@ public class Nave : MonoBehaviour
         Vector2 minPantalla = Camera.main.ViewportToWorldPoint(new Vector2(x: 0, y: 0));
         Vector2 maxPantalla = Camera.main.ViewportToWorldPoint(new Vector2(x: 1, y: 1));
 
-        minPantalla.x += 0.6f;
-        maxPantalla.x -= 0.6f;
+        minPantalla.x += 0.8f;
+        maxPantalla.x -= 5.734f; //maxPantalla.x -= 0.8f + 4.91f;
 
         minPantalla.y += 0.6f;
         maxPantalla.y -= 0.6f;
