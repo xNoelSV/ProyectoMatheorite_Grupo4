@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fondo
   - Nave
+  - Meteo
   layers:
   - Default
   - TransparentFX
