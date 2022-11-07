@@ -41,14 +41,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Espacio
+    uniqueID: 1055727293
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Tierra
     uniqueID: 387731481
-    locked: 0
-  - name: Espacio
-    uniqueID: 1055727293
     locked: 0
   - name: Nave
     uniqueID: 2417604719
