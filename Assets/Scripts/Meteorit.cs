@@ -17,7 +17,7 @@ public class Meteorit : MonoBehaviour
 
         gameObject.GetComponent<SpriteRenderer>().sprite = modelsMeteorit[spriteSelec];
 
-        Debug.Log(spriteSelec);
+        //Debug.Log(spriteSelec);
 
     }
 
@@ -44,10 +44,13 @@ public class Meteorit : MonoBehaviour
     {
         if (objecteTocat.tag == "Bullet")
         {
-
             Destroy(gameObject);
-            // GameObject.Find("punts").GetComponent<Punts>().SumaUnPunt();
-
+            GameObject.Find("Puntos").GetComponent<Punts>().SumarPuntos();
+        } 
+        else if (objecteTocat.tag == "Nave")
+        {
+            Destroy(gameObject);
+            GameObject.Find("Puntos").GetComponent<Punts>().RestarPuntos();
         }
     }
 

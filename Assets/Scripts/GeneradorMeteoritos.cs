@@ -9,7 +9,7 @@ public class GeneradorMeteoritos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("CreaMeteorito", 2f, 3f);
+        InvokeRepeating("CreaMeteorito", 2f, 2f);
             // 2f: Tiempo que tarda en llamar por primera vez la función "CrearMeteorito"
             // 3f: Intérvalo de tiempo para llamar de nuevo a la función "CrearMeteorito"
     }

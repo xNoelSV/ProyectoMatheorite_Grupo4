@@ -5,20 +5,25 @@ using UnityEngine;
 public class Punts : MonoBehaviour
 {
 
-    private TMPro.TextMeshPro _punts;
-    private int _puntsEnter = 0;
+    private TMPro.TextMeshPro Puntos;
+    private int puntosTotales = 0;
 
-    public void SumaUnPunt()
+    public void SumarPuntos()
     {
-        _puntsEnter++;
-        // _punts.text = _puntsEnter.ToString();
-        gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = _puntsEnter.ToString();
+        puntosTotales += 10;
+        gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = puntosTotales.ToString();
+    }
+
+    public void RestarPuntos()
+    {
+        puntosTotales -= 5;
+        gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = puntosTotales.ToString();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        _punts = gameObject.GetComponent<TMPro.TextMeshPro>();
+        Puntos = gameObject.GetComponent<TMPro.TextMeshPro>();
     }
 
     // Update is called once per frame
