@@ -47,7 +47,8 @@ public class Meteorit : MonoBehaviour
             Destroy(gameObject);
             GameObject.Find("Puntos").GetComponent<Punts>().SumarPuntos();
         } 
-        else if (objecteTocat.tag == "Nave")
+        
+        if (objecteTocat.tag == "Nave")
         {
             Destroy(gameObject);
             GameObject.Find("Puntos").GetComponent<Punts>().RestarPuntos();
