@@ -1,3 +1,1 @@
 # ProyectoMatheorite_Grupo4
-#YO TAMBIEN FORMO PARTE DEL GRUPO...
-#ASI ME GUSTA MAS COÑASO
