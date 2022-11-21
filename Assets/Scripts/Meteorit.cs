@@ -51,6 +51,7 @@ public class Meteorit : MonoBehaviour
         if (objecteTocat.tag == "Nave")
         {
             Destroy(gameObject);
+            GameObject.Find("Vidas").GetComponent<Vides>().RestarVida();
             GameObject.Find("Puntos").GetComponent<Punts>().RestarPuntos();
         }
     }

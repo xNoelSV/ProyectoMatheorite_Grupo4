@@ -54,3 +54,6 @@ TagManager:
   - name: Nave
     uniqueID: 2417604719
     locked: 0
+  - name: Meteoritos
+    uniqueID: 3901651281
+    locked: 0
