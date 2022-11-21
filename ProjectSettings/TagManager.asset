@@ -57,3 +57,9 @@ TagManager:
   - name: Meteoritos
     uniqueID: 3901651281
     locked: 0
+  - name: TextMeteorit
+    uniqueID: 3771887841
+    locked: 0
+  - name: MenuDerecha
+    uniqueID: 3053300629
+    locked: 0

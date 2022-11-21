@@ -1,16 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Vides : MonoBehaviour
 {
     private TMPro.TextMeshPro Vidas;
     private int vidasTotales = 3;
 
-    public void RestarVida()
+    public bool RestarVida()
     {
-        vidasTotales -= 1;
-        gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = vidasTotales.ToString();
+        if (vidasTotales -1 == 0)
+        {
+            SceneManager.LoadScene("MainMenu");
+            return true;
+        } 
+        else
+        {
+            vidasTotales -= 1;
+            gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = vidasTotales.ToString();
+            return false;
+        }
+        
     }
 
 
