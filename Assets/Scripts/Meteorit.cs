@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class Meteorit : MonoBehaviour
 { 
 
     public Sprite[] modelsMeteorit = new Sprite[4];
+    
     private float _vel = 4f;
 
     // Start is called before the first frame update
     void Start()
     {
+
         System.Random rnd = new System.Random();
         int spriteSelec = rnd.Next(4);
 
@@ -59,5 +62,6 @@ public class Meteorit : MonoBehaviour
             
         }
     }
+    
 
 }
