@@ -7,6 +7,7 @@ public class Vides : MonoBehaviour
 {
     private TMPro.TextMeshPro Vidas;
     private int vidasTotales = 3;
+    public int contadorAciertos = 0;
 
     public bool RestarVida()
     {
@@ -22,6 +23,19 @@ public class Vides : MonoBehaviour
             return false;
         }
         
+    }
+
+    public void ComprobarSumarVida()
+    {
+        contadorAciertos++;
+
+        if (contadorAciertos == 3)
+        {
+            vidasTotales += 1;
+            gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = vidasTotales.ToString();
+            contadorAciertos = 0;
+        }
+
     }
 
 
