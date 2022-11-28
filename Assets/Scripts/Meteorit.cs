@@ -48,7 +48,22 @@ public class Meteorit : MonoBehaviour
         if (objecteTocat.tag == "Bullet")
         {
             Destroy(gameObject);
-            GameObject.Find("Puntos").GetComponent<Punts>().SumarPuntos();
+
+            if (GameObject.Find("Operacio").GetComponent<GeneradorOperaciones>().res == GameObject.Find("ValorMeteo").GetComponent<ValorMeteorit>().numeroMeteorit)
+            {
+                GameObject.Find("Operacio").GetComponent<GeneradorOperaciones>().iniciar();
+                GameObject.Find("Puntos").GetComponent<Punts>().SumarPuntos();
+            } 
+            else
+            {
+                bool juegoFinalizado = GameObject.Find("Vidas").GetComponent<Vides>().RestarVida();
+                if (!juegoFinalizado)
+                {
+                    GameObject.Find("Operacio").GetComponent<GeneradorOperaciones>().iniciar();
+                    GameObject.Find("Puntos").GetComponent<Punts>().RestarPuntos();
+                }
+            }
+            
         } 
         
         if (objecteTocat.tag == "Nave")

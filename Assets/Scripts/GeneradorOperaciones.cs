@@ -6,13 +6,19 @@ using System;
 
 public class GeneradorOperaciones : MonoBehaviour
 {
-
     private TMPro.TextMeshPro Operacion;
-    private int res;
+    public int res;
     private String operacionEscrita;
+    private int[] resultadoADevolver = new int[11];
 
     // Start is called before the first frame update
     void Start()
+    {
+        GenerarOperacion();
+        gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = operacionEscrita;
+    }
+
+    public void iniciar()
     {
         GenerarOperacion();
         gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = operacionEscrita;
@@ -24,7 +30,7 @@ public class GeneradorOperaciones : MonoBehaviour
         
     }
 
-    private void GenerarOperacion()
+    public void GenerarOperacion()
     {
         System.Random r = new System.Random();
 
@@ -37,7 +43,7 @@ public class GeneradorOperaciones : MonoBehaviour
             int num2 = r.Next(100);
 
             res = num1 + num2;
-            operacionEscrita = "x = " + num1.ToString() + " + " + num2.ToString();
+            operacionEscrita = "x = " + num1.ToString() + "+" + num2.ToString();
         }
         else if (opElegido.Equals("-"))
         {
@@ -45,7 +51,7 @@ public class GeneradorOperaciones : MonoBehaviour
             int num2 = r.Next(100);
 
             res = num1 - num2;
-            operacionEscrita = "x = " + num1.ToString() + " + " + num2.ToString();
+            operacionEscrita = "x = " + num1.ToString() + "-" + num2.ToString();
         }
         else if (opElegido.Equals("/"))
         {
@@ -55,28 +61,44 @@ public class GeneradorOperaciones : MonoBehaviour
             {
                 num1 = r.Next(100);
                 num2 = r.Next(100);
-            } while (num1 % num2 != 0);
+            } while ((num1 % num2 != 0) || (num1 == 0) || (num2 == 0));
             
             res = num1 / num2;
-            operacionEscrita = num1.ToString() + " + " + num2.ToString();
+            operacionEscrita = num1.ToString() + "/" + num2.ToString();
         }
         else if (opElegido.Equals("*"))
         {
-            int num1 = r.Next(10);
-            int num2 = r.Next(10);
+            int num1 = 0;
+            int num2 = 0;
+
+            do
+            {
+                num1 = r.Next(11);
+                num2 = r.Next(11);
+            } while ((num1 == 0) || (num2 == 0));
 
             res = num1 * num2;
+            operacionEscrita = num1.ToString() + "*" + num2.ToString();
         }
 
     }
 
-    private String resultadosOperaciones()
+    public int GenerarPosiblesResultats()
     {
-        int numGenerat = 0;
-        String res = "";
+        System.Random r = new System.Random();
 
+        resultadoADevolver[0] = res - 5;
+        resultadoADevolver[1] = res - 4;
+        resultadoADevolver[2] = res - 3;
+        resultadoADevolver[3] = res - 2;
+        resultadoADevolver[4] = res - 1;
+        resultadoADevolver[5] = res;
+        resultadoADevolver[6] = res + 1;
+        resultadoADevolver[7] = res + 2;
+        resultadoADevolver[8] = res + 3;
+        resultadoADevolver[9] = res + 4;
+        resultadoADevolver[10] = res + 5;
 
-
-        return res;
+        return resultadoADevolver[r.Next(11)];  
     }
 }

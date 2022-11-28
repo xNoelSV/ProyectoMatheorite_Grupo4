@@ -168,9 +168,9 @@ GameObject:
   - component: {fileID: 8628076578254989359}
   - component: {fileID: 1289352656813427698}
   - component: {fileID: 7214602785959393150}
-  - component: {fileID: 2352257669750895638}
+  - component: {fileID: 1443915984583417609}
   m_Layer: 7
-  m_Name: Texto
+  m_Name: ValorMeteo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -330,24 +330,16 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1289352656813427698}
   m_maskType: 0
---- !u!223 &2352257669750895638
-Canvas:
+--- !u!114 &1443915984583417609
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068694453449455153}
   m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 1
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: -523079455
-  m_SortingOrder: 2
-  m_TargetDisplay: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4bf6dd6c9127f41bb273c048f398d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numeroMeteorit: 0
