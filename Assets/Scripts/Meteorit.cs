@@ -53,10 +53,12 @@ public class Meteorit : MonoBehaviour
             {
                 GameObject.Find("Operacio").GetComponent<GeneradorOperaciones>().iniciar();
                 GameObject.Find("Puntos").GetComponent<Punts>().SumarPuntos();
+                GameObject.Find("Vidas").GetComponent<Vides>().ComprobarSumarVida();
             } 
             else
             {
                 bool juegoFinalizado = GameObject.Find("Vidas").GetComponent<Vides>().RestarVida();
+                GameObject.Find("Vidas").GetComponent<Vides>().contadorAciertos = 0;
                 if (!juegoFinalizado)
                 {
                     GameObject.Find("Operacio").GetComponent<GeneradorOperaciones>().iniciar();
@@ -69,6 +71,7 @@ public class Meteorit : MonoBehaviour
         if (objecteTocat.tag == "Nave")
         {
             Destroy(gameObject);
+            GameObject.Find("Vidas").GetComponent<Vides>().contadorAciertos = 0;
             bool juegoFinalizado = GameObject.Find("Vidas").GetComponent<Vides>().RestarVida();
             if (!juegoFinalizado)
             {

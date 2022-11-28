@@ -9,7 +9,7 @@ public class GeneradorOperaciones : MonoBehaviour
     private TMPro.TextMeshPro Operacion;
     public int res;
     private String operacionEscrita;
-    private int[] resultadoADevolver = new int[11];
+    private int[] resultadoADevolver = new int[13];
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +39,8 @@ public class GeneradorOperaciones : MonoBehaviour
 
         if (opElegido.Equals("+"))
         {
+            GameObject.Find("Operacio").GetComponent<TMPro.TextMeshProUGUI>().fontSize = 42;
+
             int num1 = r.Next(100);
             int num2 = r.Next(100);
 
@@ -47,6 +49,8 @@ public class GeneradorOperaciones : MonoBehaviour
         }
         else if (opElegido.Equals("-"))
         {
+            GameObject.Find("Operacio").GetComponent<TMPro.TextMeshProUGUI>().fontSize = 42;
+
             int num1 = r.Next(100);
             int num2 = r.Next(100);
 
@@ -55,12 +59,14 @@ public class GeneradorOperaciones : MonoBehaviour
         }
         else if (opElegido.Equals("/"))
         {
+            GameObject.Find("Operacio").GetComponent<TMPro.TextMeshProUGUI>().fontSize = 72;
+
             int num1 = 0;
             int num2 = 0;
             do
             {
-                num1 = r.Next(100);
-                num2 = r.Next(100);
+                num1 = r.Next(99)+1;
+                num2 = r.Next(10)+1;
             } while ((num1 % num2 != 0) || (num1 == 0) || (num2 == 0));
             
             res = num1 / num2;
@@ -68,6 +74,8 @@ public class GeneradorOperaciones : MonoBehaviour
         }
         else if (opElegido.Equals("*"))
         {
+            GameObject.Find("Operacio").GetComponent<TMPro.TextMeshProUGUI>().fontSize = 72;
+
             int num1 = 0;
             int num2 = 0;
 
@@ -93,11 +101,13 @@ public class GeneradorOperaciones : MonoBehaviour
         resultadoADevolver[3] = res - 2;
         resultadoADevolver[4] = res - 1;
         resultadoADevolver[5] = res;
-        resultadoADevolver[6] = res + 1;
-        resultadoADevolver[7] = res + 2;
-        resultadoADevolver[8] = res + 3;
-        resultadoADevolver[9] = res + 4;
-        resultadoADevolver[10] = res + 5;
+        resultadoADevolver[6] = res;
+        resultadoADevolver[7] = res;
+        resultadoADevolver[8] = res + 1;
+        resultadoADevolver[9] = res + 2;
+        resultadoADevolver[10] = res + 3;
+        resultadoADevolver[11] = res + 4;
+        resultadoADevolver[12] = res + 5;
 
         return resultadoADevolver[r.Next(11)];  
     }
