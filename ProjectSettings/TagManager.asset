@@ -45,8 +45,17 @@ TagManager:
   - name: Espacio
     uniqueID: 1055727293
     locked: 0
+  - name: Background
+    uniqueID: 783243837
+    locked: 0
+  - name: Midground
+    uniqueID: 2932143313
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Meteorito
+    uniqueID: 354616319
     locked: 0
   - name: Tierra
     uniqueID: 387731481
