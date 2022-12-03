@@ -1232,8 +1232,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Matheorite
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9d109381a8157d641b58f9b1f044287c, type: 2}
-  m_sharedMaterial: {fileID: 225466857292107180, guid: 9d109381a8157d641b58f9b1f044287c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a43b04b6ce9086544b07511bb2ca6f35, type: 2}
+  m_sharedMaterial: {fileID: 225466857292107180, guid: a43b04b6ce9086544b07511bb2ca6f35, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -72,3 +72,6 @@ TagManager:
   - name: MenuDerecha
     uniqueID: 3053300629
     locked: 0
+  - name: Botones
+    uniqueID: 3897538297
+    locked: 0

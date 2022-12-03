@@ -13,7 +13,7 @@ public class Vides : MonoBehaviour
     {
         if (vidasTotales -1 == 0)
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("GameOver");
             return true;
         } 
         else
