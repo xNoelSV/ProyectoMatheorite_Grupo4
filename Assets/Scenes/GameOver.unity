@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 94425312}
   - component: {fileID: 94425314}
   m_Layer: 5
-  m_Name: PuntosTotales
+  m_Name: textoFinal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,17 +217,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94425310}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1220735962}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00002861}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 824.6172, y: 75.3223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94425312
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 94425310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a6d36e0004581d4b8630c829837bb1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f6f21f90d7de0d45bd43830f9464922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &235785608
@@ -668,7 +668,6 @@ GameObject:
   - component: {fileID: 1220735961}
   - component: {fileID: 1220735960}
   - component: {fileID: 1220735959}
-  - component: {fileID: 1220735963}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -749,8 +748,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1845710583}
   - {fileID: 94425311}
+  - {fileID: 1845710583}
   - {fileID: 1741758104}
   - {fileID: 723781262}
   m_Father: {fileID: 0}
@@ -761,18 +760,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1220735963
+--- !u!1 &1277663687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277663689}
+  - component: {fileID: 1277663688}
+  m_Layer: 0
+  m_Name: InsertarPuntos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1277663688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220735958}
+  m_GameObject: {fileID: 1277663687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a6d36e0004581d4b8630c829837bb1f, type: 3}
+  m_Script: {fileID: 11500000, guid: ece81b8a0ef032a4fac6dbc8c645d289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1277663689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277663687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 862.15784, y: 374.92883, z: -1.7988044}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1656199462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1052,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1220735962}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

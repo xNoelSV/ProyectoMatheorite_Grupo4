@@ -7,12 +7,15 @@ public class Vides : MonoBehaviour
 {
     private TMPro.TextMeshPro Vidas;
     private int vidasTotales = 3;
+    private int final = 0;
     public int contadorAciertos = 0;
 
     public bool RestarVida()
     {
         if (vidasTotales -1 == 0)
         {
+            final = GameObject.Find("Puntos").GetComponent<Punts>().puntosTotales -5;
+            GameObject.Find("PuntosFinal").GetComponent<PuntosFinal>().puntosFinal = final.ToString();
             SceneManager.LoadScene("GameOver");
             return true;
         } 

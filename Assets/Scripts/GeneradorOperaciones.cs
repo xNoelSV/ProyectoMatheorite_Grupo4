@@ -9,7 +9,7 @@ public class GeneradorOperaciones : MonoBehaviour
     private TMPro.TextMeshPro Operacion;
     public int res;
     private String operacionEscrita;
-    private int[] resultadoADevolver = new int[13];
+    private int[] resultadoADevolver = new int[15];
 
     // Start is called before the first frame update
     void Start()
@@ -79,14 +79,11 @@ public class GeneradorOperaciones : MonoBehaviour
             int num1 = 0;
             int num2 = 0;
 
-            do
-            {
-                num1 = r.Next(11);
-                num2 = r.Next(11);
-            } while ((num1 == 0) || (num2 == 0));
+            num1 = r.Next(5)+5;
+            num2 = r.Next(5)+2;
 
             res = num1 * num2;
-            operacionEscrita = num1.ToString() + "*" + num2.ToString();
+            operacionEscrita = num1.ToString() + "x" + num2.ToString();
         }
 
     }
@@ -103,12 +100,14 @@ public class GeneradorOperaciones : MonoBehaviour
         resultadoADevolver[5] = res;
         resultadoADevolver[6] = res;
         resultadoADevolver[7] = res;
-        resultadoADevolver[8] = res + 1;
-        resultadoADevolver[9] = res + 2;
-        resultadoADevolver[10] = res + 3;
-        resultadoADevolver[11] = res + 4;
-        resultadoADevolver[12] = res + 5;
+        resultadoADevolver[8] = res;
+        resultadoADevolver[9] = res;
+        resultadoADevolver[10] = res + 1;
+        resultadoADevolver[11] = res + 2;
+        resultadoADevolver[12] = res + 3;
+        resultadoADevolver[13] = res + 4;
+        resultadoADevolver[14] = res + 5;
 
-        return resultadoADevolver[r.Next(11)];  
+        return resultadoADevolver[r.Next(15)];  
     }
 }
