@@ -10,9 +10,9 @@ El objetivo principal de "Matheorite" es ofrecer una experiencia de juego educat
 
 ## Tecnologías Utilizadas
 
-- **Unity3D**: Utilizado como el motor principal para el desarrollo del juego, proporcionando herramientas sólidas para la creación de entornos 3D y la implementación de la lógica del juego.
+- **Unity2D**: Utilizado como el motor principal para el desarrollo del juego, proporcionando herramientas sólidas para la creación de entornos 2D y la implementación de la lógica del juego.
 
-- **C#**: El lenguaje de programación principal para Unity3D, utilizado para la implementación de la mecánica del juego, la lógica y la interacción entre los elementos.
+- **C#**: El lenguaje de programación principal para Unity2D, utilizado para la implementación de la mecánica del juego, la lógica y la interacción entre los elementos.
 
 - **Diseño Colaborativo**: Hemos trabajado en estrecha colaboración para diseñar y crear los gráficos, sonidos y niveles del juego. La comunicación constante fue clave para garantizar la coherencia y la calidad del proyecto.
 
@@ -28,7 +28,7 @@ Este proyecto "Matheorite" ha sido una experiencia enriquecedora que ha contribu
 
 4. **Responsabilidad Compartida**: La responsabilidad compartida en todos los aspectos del proyecto ha fomentado un sentido de responsabilidad y compromiso mutuo.
 
-5. **Aprendizaje a Través del Juego**: "Matheorite" no solo es un juego, sino también una herramienta educativa. Hemos aprendido a equilibrar la diversión del juego con la efectividad de la enseñanza.
+5. **Aprendizaje a través del Juego**: "Matheorite" no solo es un juego, sino también una herramienta educativa. Hemos aprendido a equilibrar la diversión del juego con la efectividad de la enseñanza.
 
 ## Instrucciones de Despliegue
 
@@ -36,6 +36,6 @@ Para disfrutar de "Matheorite", sigue estos sencillos pasos:
 
 1. Descarga el archivo de instalación desde el repositorio.
 2. Instala el juego en tu dispositivo.
-3. Embárcate en una aventura matemática en el espacio y derrota a los Matheorites.
+3. Embárcate en una aventura matemática en el espacio y destrye todos los meteoritos.
 
 Gracias por explorar "Matheorite". Este juego representa nuestro esfuerzo conjunto, creatividad y dedicación. ¡Esperamos que disfrutes de la experiencia educativa y de juego que hemos creado con tanto entusiasmo!
